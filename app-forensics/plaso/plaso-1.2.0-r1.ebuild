@@ -10,7 +10,7 @@ inherit versionator distutils-r1
 
 DESCRIPTION="A tool designed to extract timestamps from various files found on a typical computer system(s) and aggregate them."
 HOMEPAGE="https://github.com/log2timeline/plaso/"
-SRC_URI="https://github.com/log2timeline/${PN}/archive/v${PV}.tar.gz"
+SRC_URI="https://github.com/log2timeline/plaso/releases/download/${PV}/plaso-${PV}.tar.gz"
 
 LICENSE="Apache-2"
 SLOT="0"
@@ -24,7 +24,7 @@ DEPEND="${PYTHON_DEPS}
 	app-misc/hachoir-metadata
 	dev-python/binplist
 	dev-python/bencode
-	app-forensics/dfvfs
+	=app-forensics/dfvfs-20150117
 	dev-python/ipython
 	app-forensics/libbde[python]
 	>=app-forensics/libesedb-20140301[python]

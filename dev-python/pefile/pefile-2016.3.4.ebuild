@@ -3,18 +3,24 @@
 # $Header: $
 EAPI=5
 
-inherit distutils
+PYTHON_COMPAT=( python2_7 )
 
-MY_P=${P/_p/-}
+inherit distutils-r1 versionator
+
 DESCRIPTION="Module to read and work with Portable Executable (PE) files"
 HOMEPAGE="http://code.google.com/p/pefile/"
-SRC_URI="http://${PN}.googlecode.com/files/${MY_P}.tar.gz"
+SRC_URI="https://github.com/erocarrera/${PN}/releases/download/v${PV}/${P}.tar.gz"
 
 LICENSE="GPL"
 SLOT="0"
 KEYWORDS="~x86 ~amd64 ~x64-macos ~x86-macos"
 IUSE=""
+REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
-DEPEND=""
+DEPEND="
+		dev-python/future
+		${PYTHON_DEPS}
+	"
+RDEPEND="${DEPEND}"
 
-S="${WORKDIR}/${MY_P}"
+#S="${WORKDIR}/${PN}-${MY_P}"

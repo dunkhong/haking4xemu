@@ -1,0 +1,9 @@
+--- setup.py.orig	2016-10-31 12:05:49.179717728 +0900
++++ setup.py	2016-10-31 12:06:29.753718741 +0900
+@@ -85,5 +85,5 @@
+         'Programming Language :: Python',
+     ],
+     package_dir={'dfvfs': 'dfvfs'},
+-    packages=find_packages('.'),
++    packages=find_packages('.',exclude=[u'examples', u'tests', u'tests.*']),
+ )

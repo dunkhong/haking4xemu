@@ -8,7 +8,7 @@ inherit distutils
 MY_P=${P/_p/-}
 DESCRIPTION="Module to read and work with Portable Executable (PE) files"
 HOMEPAGE="http://code.google.com/p/pefile/"
-SRC_URI="http://${PN}.googlecode.com/files/${MY_P}.tar.gz"
+SRC_URI="https://github.com/erocarrera/${PN}/archive/${MY_P}.tar.gz"
 
 LICENSE="GPL"
 SLOT="0"
