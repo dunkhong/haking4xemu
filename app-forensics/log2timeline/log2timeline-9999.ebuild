@@ -9,7 +9,7 @@ inherit perl-module git-r3
 DESCRIPTION="Log2timeline super timeline tool"
 HOMEPAGE="http://code.google.com/p/log2timeline/"
 SRC_URI=""
-EGIT_REPO_URI="https://code.google.com/p/log2timeline/"
+EGIT_REPO_URI="https://github.com/dunkhong/log2timeline.git"
 
 LICENSE="GPL3"
 SLOT="0"
