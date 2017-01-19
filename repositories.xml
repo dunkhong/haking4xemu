@@ -6,6 +6,6 @@
 		<owner type="person">
 			<name>dacook</name>
 		</owner>
-		<source type="git">git://github.com/schism/haking4xemu.git</source>
+		<source type="git">git://github.com/dunkhong/haking4xemu.git</source>
 	</repo>
 </repositories>
