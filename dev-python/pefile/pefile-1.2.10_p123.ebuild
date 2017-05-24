@@ -3,7 +3,9 @@
 # $Header: $
 EAPI=5
 
-inherit distutils
+PYTHON_COMPAT=( python2_7 )
+
+inherit distutils-r1
 
 MY_P=${P/_p/-}
 DESCRIPTION="Module to read and work with Portable Executable (PE) files"

@@ -23,7 +23,6 @@ REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 DEPEND="${PYTHON_DEPS}
 	dev-python/six
-	dev-python/pyconstruct
 	dev-libs/protobuf[${PYTHON_USEDEP}]
 	app-forensics/sleuthkit
 	app-forensics/pytsk

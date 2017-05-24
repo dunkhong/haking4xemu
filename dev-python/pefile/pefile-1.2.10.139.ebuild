@@ -5,7 +5,7 @@ EAPI=5
 
 PYTHON_COMPAT=( python2_7 )
 
-inherit distutils versionator
+inherit distutils-r1 versionator
 
 MY_PV=$(replace_version_separator 3 '-')
 MY_P=${PN}-${MY_PV}
