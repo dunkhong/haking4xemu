@@ -3,7 +3,8 @@
 # $Header: $
 EAPI="5"
 
-inherit distutils python
+PYTHON_COMPAT=( python2_7 )
+inherit distutils-r1 python-r1
 
 DESCRIPTION="A Python library that will disassemble X86."
 HOMEPAGE="http://www.immunitysec.com/resources-freesoftware.shtml"

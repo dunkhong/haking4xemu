@@ -4,7 +4,8 @@
 
 EAPI=5
 
-inherit distutils git-r3
+PYTHON_COMPAT=( python2_7 )
+inherit distutils-r1 git-r3
 
 DESCRIPTION="GRR Rapid Response is an Incident Response Framework"
 HOMEPAGE="https://github.com/google/grr"
