@@ -4,16 +4,19 @@
 
 EAPI=5
 
+PYHTON_COMPAT=( pyhton2_7 )
+
 DESCRIPTION="Library and tools to access the Linux Logical Volume Manager (LVM) volume system format"
 HOMEPAGE="https://github.com/libyal/libvslvm"
 LIBYAL_RELEASE="experimental"
+LIBYAL_PYLIB="pyvslvm"
 
 inherit libyal-r1
 
 LICENSE="LGPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="debug iconv nls static-libs threads"
+IUSE="debug iconv nls static-libs python threads"
 
 DEPEND="${LIBYAL_DEPEND}
 	"
