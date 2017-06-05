@@ -1,0 +1,40 @@
+--- libfvde-20160918/libfvde/libfvde_metadata.c.orig	2017-06-05 13:34:12.003334748 +0900
++++ libfvde-20160918/libfvde/libfvde_metadata.c	2017-06-05 13:35:16.852331217 +0900
+@@ -30,6 +30,7 @@
+ #include "libfvde_libbfio.h"
+ #include "libfvde_libcerror.h"
+ #include "libfvde_libcnotify.h"
++#include "libfvde_libcstring.h"
+ #include "libfvde_metadata.h"
+ #include "libfvde_metadata_block.h"
+ #include "libfvde_xml_plist.h"
+--- libfvde-20160918/libfvde/libfvde_xml_plist_key.c.orig	2017-06-05 13:35:47.091329571 +0900
++++ libfvde-20160918/libfvde/libfvde_xml_plist_key.c	2017-06-05 13:36:16.140327990 +0900
+@@ -28,6 +28,7 @@
+ #include "libfvde_libcnotify.h"
+ #include "libfvde_libfguid.h"
+ #include "libfvde_libfvalue.h"
++#include "libfvde_libcstring.h"
+ #include "libfvde_libuna.h"
+ #include "libfvde_xml_plist_key.h"
+ #include "libfvde_xml_plist_tag.h"
+--- libfvde-20160918/libfvde/libfvde_xml_plist_parser.c.orig	2017-06-05 13:36:44.420326450 +0900
++++ libfvde-20160918/libfvde/libfvde_xml_plist_parser.c	2017-06-05 13:37:09.004325112 +0900
+@@ -103,6 +103,7 @@
+ 
+ #include "libfvde_libcerror.h"
+ #include "libfvde_libcnotify.h"
++#include "libfvde_libcstring.h"
+ #include "libfvde_types.h"
+ #include "libfvde_xml_plist.h"
+ #include "libfvde_xml_plist_tag.h"
+--- libfvde-20160918/libfvde/libfvde_xml_plist_tag.c.orig	2017-06-05 13:37:29.892323974 +0900
++++ libfvde-20160918/libfvde/libfvde_xml_plist_tag.c	2017-06-05 13:37:47.916322993 +0900
+@@ -26,6 +26,7 @@
+ 
+ #include "libfvde_libcdata.h"
+ #include "libfvde_libcerror.h"
++#include "libfvde_libcstring.h"
+ #include "libfvde_xml_plist_attribute.h"
+ #include "libfvde_xml_plist_tag.h"
+ 
