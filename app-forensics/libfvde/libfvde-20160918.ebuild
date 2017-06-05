@@ -4,6 +4,8 @@
 
 EAPI=5
 
+PYTHON_COMPAT=( python2_7 )
+
 inherit versionator autotools-utils
 
 MY_DATE="$(get_version_component_range 1)"
@@ -14,8 +16,9 @@ SRC_URI="https://github.com/libyal/${PN}/releases/download/${MY_DATE}/${PN}-expe
 
 LICENSE="LGPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~x86 ~x86-macos ~x64-macos"
-IUSE="debug nls unicode"
+KEYWORDS="~amd64 ~x86"
+IUSE="debug nls unicode python"
+REQUIRED_USE="python? ( ${PYTHON_REQUIRED_USE} )"
 
 DEPEND="
 	nls? (
@@ -31,9 +34,14 @@ RDEPEND="${DEPEND}"
 
 AUTOTOOLS_IN_SOURCE_BUILD=1
 
+src_prepare() {
+	epatch ${FILESDIR}/${P}.patch
+}
+
 src_configure() {
 	local myeconfargs=( '--disable-rpath'
 		$(use_enable nls)
+		$(use_enable python)
 		$(use_with nls libiconv-prefix)
 		$(use_with nls libintl-prefix)
 		$(use_enable unicode wide-character-type)
