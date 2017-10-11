@@ -4,7 +4,9 @@
 
 EAPI="5"
 
-inherit scons-utils distutils
+PYTHON_COMPAT=( python2_7 )
+
+inherit scons-utils distutils-r1
 
 DESCRIPTION="A small command line utility for reading and querying Windows NT/2K/XP registries"
 HOMEPAGE="http://projects.sentinelchicken.org/reglookup/"
