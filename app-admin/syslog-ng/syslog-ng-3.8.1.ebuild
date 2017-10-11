@@ -23,7 +23,7 @@ RDEPEND="
 	dbi? ( >=dev-db/libdbi-0.8.3 )
 	geoip? ( >=dev-libs/geoip-1.5.0 )
 	json? ( >=dev-libs/json-c-0.9 )
-	java? ( >=dev-java/oracle-jre-bin-1.8.0 )
+	java? ( >=dev-java/gradle-bin-3.3 )
 	python? ( ${PYTHON_DEPS} )
 	redis? ( dev-libs/hiredis )
 	smtp? ( net-libs/libesmtp )
