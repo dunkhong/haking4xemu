@@ -97,6 +97,14 @@ src_configure() {
 		$(use_enable tcpd tcp-wrapper)
 }
 
+src_compile() {
+	sed -i "s_^JAR .*_JAR = $(which jar)_" Makefile
+	sed -i "s_^JAVAC .*_JAVAC = $(which javac)_" Makefile
+	sed -i "s_^JAVAH .*_JAVAH = $(which javah)_" Makefile
+
+	autotools-utils_src_compile
+}
+
 src_install() {
 	# -j1 for bug #484470
 	emake -j1 DESTDIR="${D}" install
