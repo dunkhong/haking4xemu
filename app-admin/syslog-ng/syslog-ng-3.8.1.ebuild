@@ -102,7 +102,7 @@ src_compile() {
 	sed -i "s_^JAVAC .*_JAVAC = $(which javac)_" Makefile
 	sed -i "s_^JAVAH .*_JAVAH = $(which javah)_" Makefile
 
-	autotools-utils_src_compile
+	default
 }
 
 src_install() {
