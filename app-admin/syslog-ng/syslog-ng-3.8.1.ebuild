@@ -102,6 +102,9 @@ src_compile() {
 	sed -i "s_^JAVAC .*_JAVAC = $(which javac)_" Makefile
 	sed -i "s_^JAVAH .*_JAVAH = $(which javah)_" Makefile
 
+	sed -i "s_^JNI_CFLAGS .*_JNI_CFLAGS = -I/usr/lib/jvm/$(java-config -f)/include -I" Makefile
+	sed -i "s_^JNI_LIBS .*_JNI_LIBS = -L/usr/lib/jvm/$(java-config -f)/lib -ljvm" Makefile
+
 	default
 }
 
