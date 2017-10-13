@@ -64,6 +64,7 @@ src_prepare() {
 				's:@GENTOO_RESTART@:/etc/init.d/syslog-ng reload:')" \
 			"${f}" > "${T}/${bn/.in/}" || die
 	done
+	chmod 777 ${D}
 	epatch_user
 }
 
@@ -137,7 +138,7 @@ src_install() {
 
 pkg_postinst() {
 	elog "For detailed documentation please see the upstream website:"
-	elog "http://www.balabit.com/sites/default/files/documents/syslog-ng-ose-3.7-guides/en/syslog-ng-ose-v3.7-guide-admin/html/index.html"
+	elog "http://www.balabit.com/sites/default/files/documents/syslog-ng-ose-3.9-guides/en/syslog-ng-ose-v3.9-guide-admin/html/index.html"
 
 	# bug #355257
 	if ! has_version app-admin/logrotate ; then
