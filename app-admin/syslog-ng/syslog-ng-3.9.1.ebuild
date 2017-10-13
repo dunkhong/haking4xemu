@@ -105,12 +105,13 @@ src_compile() {
 	sed -i "s#^JNI_CFLAGS .*#JNI_CFLAGS = -I/usr/lib/jvm/$(java-config -f)/include -I/usr/lib/jvm/$(java-config -f)/include/linux -I#" Makefile
 	sed -i "s#^JNI_LIBS .*#JNI_LIBS = -L/usr/lib/jvm/$(java-config -f)/lib -L/usr/lib/jvm/$(java-config -f)/jre/lib/amd64/server/ -ljvm#" Makefile
 
+	sed -i "s#-m 644# -m 666#g" Makefile
+
 	default
 }
 
 src_install() {
 	# -j1 for bug #484470
-	chmod -R 777 ${D}
 	emake -j1 DESTDIR="${D}" install
 
 	dodoc AUTHORS NEWS.md CONTRIBUTING.md contrib/syslog-ng.conf* \
