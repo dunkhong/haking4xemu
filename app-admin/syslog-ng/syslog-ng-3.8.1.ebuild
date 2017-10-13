@@ -103,7 +103,7 @@ src_compile() {
 	sed -i "s_^JAVAH .*_JAVAH = $(which javah)_" Makefile
 
 	sed -i "s#^JNI_CFLAGS .*#JNI_CFLAGS = -I/usr/lib/jvm/$(java-config -f)/include -I/usr/lib/jvm/$(java-config -f)/include/linux -I#" Makefile
-	sed -i "s#^JNI_LIBS .*#JNI_LIBS = -L/usr/lib/jvm/$(java-config -f)/lib -ljvm#" Makefile
+	sed -i "s#^JNI_LIBS .*#JNI_LIBS = -L/usr/lib/jvm/$(java-config -f)/lib -L/usr/lib/jvm/$(java-config -f)/jre/lib/amd64/server/ -ljvm#" Makefile
 
 	default
 }
