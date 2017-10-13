@@ -64,7 +64,6 @@ src_prepare() {
 				's:@GENTOO_RESTART@:/etc/init.d/syslog-ng reload:')" \
 			"${f}" > "${T}/${bn/.in/}" || die
 	done
-	chmod 777 ${D}
 	epatch_user
 }
 
@@ -111,6 +110,7 @@ src_compile() {
 
 src_install() {
 	# -j1 for bug #484470
+	chmod -R 777 ${D}
 	emake -j1 DESTDIR="${D}" install
 
 	dodoc AUTHORS NEWS.md CONTRIBUTING.md contrib/syslog-ng.conf* \
