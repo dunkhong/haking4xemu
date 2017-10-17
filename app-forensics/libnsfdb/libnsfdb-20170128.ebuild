@@ -7,7 +7,6 @@ EAPI=5
 DESCRIPTION="Library and tools to read the Notes Storage Facility (NSF) database file format"
 HOMEPAGE="https://github.com/libyal/libnsfdb"
 LIBYAL_RELEASE="experimental"
-LIBYAL_PYLIB="pynsfdb"
 
 inherit libyal-r1
 
