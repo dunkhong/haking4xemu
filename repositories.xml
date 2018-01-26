@@ -1,10 +1,10 @@
 <repositories version="1.0">
 	<repo quality="experimental" status="unofficial">
-		<name>haking4xemu</name>
-		<description lang="en">Gentoo overlay with various tools</description>
-		<homepage>https://github.com/schism/haking4xemu</homepage>
+		<name>haking4xemu-mirr</name>
+		<description lang="en">Haking4xemu Mirror</description>
+		<homepage>https://github.com/dunkhong/haking4xemu</homepage>
 		<owner type="person">
-			<name>dacook</name>
+			<name>dunkhong</name>
 		</owner>
 		<source type="git">git://github.com/dunkhong/haking4xemu.git</source>
 	</repo>
