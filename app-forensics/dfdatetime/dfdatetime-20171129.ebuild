@@ -11,7 +11,7 @@ inherit versionator distutils-r1
 
 MY_DATE="$(get_version_component_range 1)"
 
-DESCRIPTION="igital Forensics date and time, provides date and time objects to preserve accuracy and precision."
+DESCRIPTION="Digital Forensics date and time, provides date and time objects to preserve accuracy and precision."
 HOMEPAGE="https://github.com/log2timeline/dfdatetime"
 SRC_URI="https://github.com/log2timeline/${PN}/releases/download/${MY_DATE}/${PN}-${MY_DATE}.tar.gz"
 

@@ -1,9 +1,10 @@
-# Copyright 1999-2014 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Header: schism $
 
 EAPI=5
-
+DISTUTILS_IN_SOURCE_BUILD=1
+DISTUTILS_SINGLE_IMPL=1
 PYTHON_COMPAT=( python2_7 )
 
 inherit versionator distutils-r1
@@ -16,23 +17,22 @@ SRC_URI="https://github.com/log2timeline/${PN}/releases/download/${MY_DATE}/${PN
 
 LICENSE="Apache-2"
 SLOT="0"
-KEYWORDS="~amd64 ~hppa ~ppc ~x86"
+KEYWORDS="-*"
 IUSE=""
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 DEPEND="${PYTHON_DEPS}
 	dev-python/six
-	dev-python/pyconstruct
-	dev-libs/protobuf[python]
+	dev-libs/protobuf[${PYTHON_USEDEP}]
 	app-forensics/sleuthkit
 	app-forensics/pytsk
-	app-forensics/libbde[python]
-	app-forensics/libewf[python]
-	app-forensics/libqcow[python]
-	app-forensics/libsigscan[python]
-	app-forensics/libsmdev[python]
-	app-forensics/libsmraw[python]
-	app-forensics/libvhdi[python]
-	app-forensics/libvmdk[python]
-	app-forensics/libvshadow[python]"
+	app-forensics/libbde[${PYTHON_USEDEP}]
+	app-forensics/libewf[${PYTHON_USEDEP}]
+	app-forensics/libqcow[${PYTHON_USEDEP}]
+	app-forensics/libsigscan[${PYTHON_USEDEP}]
+	app-forensics/libsmdev[${PYTHON_USEDEP}]
+	app-forensics/libsmraw[${PYTHON_USEDEP}]
+	app-forensics/libvhdi[${PYTHON_USEDEP}]
+	app-forensics/libvmdk[${PYTHON_USEDEP}]
+	app-forensics/libvshadow[${PYTHON_USEDEP}]"
 RDEPEND="${DEPEND}"
