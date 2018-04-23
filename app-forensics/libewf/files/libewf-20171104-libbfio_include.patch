@@ -1,0 +1,12 @@
+--- configure.orig	2018-04-23 11:43:49.286802700 +0900
++++ configure	2018-04-23 11:45:41.563805212 +0900
+@@ -35210,9 +35210,6 @@
+ int
+ main ()
+ {
+-#if !defined( LIBBFIO_HAVE_WIDE_CHARACTER_TYPE ) || ( LIBBFIO_HAVE_WIDE_CHARACTER_TYPE != 1 )
+-#error LIBBFIO_HAVE_WIDE_CHARACTER_TYPE not defined
+-##endif
+   ;
+   return 0;
+ }

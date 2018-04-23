@@ -35,6 +35,7 @@ RDEPEND="${DEPEND}"
 
 DOCS=( AUTHORS ChangeLog NEWS README )
 
+PATCHES=( "${FILESDIR}"/${P}-libbfio_include.patch )
 
 src_configure() {
 	local libyal_econf=(
