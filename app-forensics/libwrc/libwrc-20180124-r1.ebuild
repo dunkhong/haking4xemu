@@ -21,3 +21,5 @@ DEPEND="${LIBYAL_DEPEND}
 	app-forensics/libbfio
 	app-forensics/libexe"
 RDEPEND="${DEPEND}"
+
+PATCHES=( "${FILESDIR}"/${P}.patch )
