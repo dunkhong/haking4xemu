@@ -22,5 +22,3 @@ DEPEND="${LIBYAL_DEPEND}
 	dev-libs/libuna
 	app-forensics/libbfio"
 RDEPEND="${DEPEND}"
-
-PATCHES=( "${FILESDIR}"/${P}.patch )
