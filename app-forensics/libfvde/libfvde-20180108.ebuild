@@ -29,9 +29,3 @@ DEPEND="
 	app-forensics/libbfio
 	dev-libs/openssl"
 RDEPEND="${DEPEND}"
-
-src_prepare() {
-	epatch ${FILESDIR}/${P}.patch
-
-	libyal-r1_src_prepare
-}
