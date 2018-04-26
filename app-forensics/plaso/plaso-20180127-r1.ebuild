@@ -24,7 +24,7 @@ DEPEND="${PYTHON_DEPS}
 	app-misc/hachoir-metadata
 	dev-python/binplist
 	dev-python/bencode
-	app-forensics/dfvfs[python]
+	app-forensics/dfvfs
 	app-forensics/dfdatetime[python]
 	app-forensics/dfwinreg[python]
 	app-forensics/fsntfs[python]
