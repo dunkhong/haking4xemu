@@ -28,7 +28,7 @@ DEPEND="${PYTHON_DEPS}
 	app-forensics/dfdatetime
 	app-forensics/dfwinreg
 	app-forensics/fsntfs
-	app-forensics/artifacts
+	dev-python/artifacts
 	app-forensics/yara[python]
 	dev-python/ipython
 	app-forensics/libbde[python]
