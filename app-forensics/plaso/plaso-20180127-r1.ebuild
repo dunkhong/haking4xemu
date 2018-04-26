@@ -24,10 +24,12 @@ DEPEND="${PYTHON_DEPS}
 	app-misc/hachoir-metadata
 	dev-python/binplist
 	dev-python/bencode
-	app-forensics/dfvfs
-	app-forensics/dfdatetime
-	app-forensics/dfwinreg
-	app-forensics/yara
+	app-forensics/dfvfs[python]
+	app-forensics/dfdatetime[python]
+	app-forensics/dfwinreg[python]
+	app-forensics/fsntfs[python]
+	app-forensics/artifacts[python]
+	app-forensics/yara[python]
 	dev-python/ipython
 	app-forensics/libbde[python]
 	app-forensics/libesedb[python]
@@ -45,7 +47,9 @@ DEPEND="${PYTHON_DEPS}
 	app-forensics/libvhdi[python]
 	app-forensics/libvmdk[python]
 	app-forensics/libvshadow[python]
+	app-forensics/libscca[python]
 	dev-libs/protobuf[python]
+	dev-python/pefile
 	dev-python/pyparsing
 	dev-python/python-dateutil
 	dev-python/dpkt
