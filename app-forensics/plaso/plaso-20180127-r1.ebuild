@@ -25,10 +25,10 @@ DEPEND="${PYTHON_DEPS}
 	dev-python/binplist
 	dev-python/bencode
 	app-forensics/dfvfs
-	app-forensics/dfdatetime[python]
-	app-forensics/dfwinreg[python]
-	app-forensics/fsntfs[python]
-	app-forensics/artifacts[python]
+	app-forensics/dfdatetime
+	app-forensics/dfwinreg
+	app-forensics/fsntfs
+	app-forensics/artifacts
 	app-forensics/yara[python]
 	dev-python/ipython
 	app-forensics/libbde[python]
