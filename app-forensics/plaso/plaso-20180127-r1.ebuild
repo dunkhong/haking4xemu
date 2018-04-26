@@ -24,10 +24,13 @@ DEPEND="${PYTHON_DEPS}
 	app-misc/hachoir-metadata
 	dev-python/binplist
 	dev-python/bencode
-	=app-forensics/dfvfs-20160918
+	app-forensics/dfvfs
+	app-forensics/dfdatetime
+	app-forensics/dfwinreg
+	app-forensics/yara
 	dev-python/ipython
 	app-forensics/libbde[python]
-	>=app-forensics/libesedb-20140301[python]
+	app-forensics/libesedb[python]
 	app-forensics/libevt[python]
 	app-forensics/libevtx[python]
 	app-forensics/libewf[python]
@@ -50,5 +53,8 @@ DEPEND="${PYTHON_DEPS}
 	dev-python/six
 	app-forensics/pytsk
 	dev-python/pyyaml
+	dev-python/efilter
+	=dev-python/construct-2.5.3
+	dev-python/yara-python
 	dev-python/pytz"
 RDEPEND="${DEPEND}"
