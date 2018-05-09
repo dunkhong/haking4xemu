@@ -20,5 +20,5 @@ DEPEND="${LIBYAL_DEPEND}
 	dev-libs/libcerror
 	dev-libs/libcnotify
 	dev-libs/libuna
-	dev-libs/libcfdatetime"
+	app-forensics/libcfdatetime"
 RDEPEND="${DEPEND}"
