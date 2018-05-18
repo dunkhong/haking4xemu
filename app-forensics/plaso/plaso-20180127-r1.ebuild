@@ -48,7 +48,7 @@ DEPEND="${PYTHON_DEPS}
 	app-forensics/libvmdk[python]
 	app-forensics/libvshadow[python]
 	app-forensics/libscca[python]
-	dev-libs/protobuf[python]
+	dev-libs/protobuf
 	dev-python/pefile
 	dev-python/pyparsing
 	dev-python/python-dateutil
