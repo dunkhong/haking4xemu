@@ -17,3 +17,8 @@ IUSE="nls iconv threads unicode"
 DEPEND="${LIBYAL_DEPEND}
 	dev-libs/libuna"
 RDEPEND="${DEPEND}"
+
+src_configure() {
+    econf $(use_enable unicode wide-character-type)
+}
+
