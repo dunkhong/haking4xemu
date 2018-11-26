@@ -13,7 +13,7 @@ inherit libyal-r1
 LICENSE="LGPL-3"
 SLOT="0/2"
 KEYWORDS="~amd64 ~hppa ~ppc ~x86"
-IUSE="${LIBYAL_IUSE} ewf fuse ssl uuid zlib bzip2"
+IUSE="${LIBYAL_IUSE} fuse ssl uuid zlib bzip2"
 
 DEPEND="${LIBYAL_DEPEND}
 	sys-libs/zlib

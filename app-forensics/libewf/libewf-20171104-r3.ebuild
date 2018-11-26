@@ -13,19 +13,31 @@ inherit libyal-r1
 LICENSE="LGPL-3"
 SLOT="0/2"
 KEYWORDS="~amd64 ~hppa ~ppc ~x86"
-IUSE="${LIBYAL_IUSE} ewf fuse ssl uuid zlib bzip2"
+IUSE="${LIBYAL_IUSE} fuse uuid bzip2 python threads static"
 
 DEPEND="${LIBYAL_DEPEND}
-	sys-libs/zlib
 	fuse? ( sys-fs/fuse )
 	uuid? ( || (
 			>=sys-apps/util-linux-2.16
 			<=sys-libs/e2fsprogs-libs-1.41.8
 			sys-darwin/libsystem
 		) )
-	ssl? ( dev-libs/openssl )
-	zlib? ( sys-libs/zlib )
 	bzip2? ( app-arch/bzip2 )
+	dev-libs/libcaes
+	dev-libs/libcdatetime
+	dev-libs/libcerror
+	dev-libs/libcfile
+	dev-libs/libclocale
+	dev-libs/libcnotify
+	dev-libs/libcdata
+	threads? ( dev-libs/libcthreads )
+	dev-libs/libcpath
+	dev-libs/libcsplit
+	dev-libs/libfcache
+	dev-libs/libfdata
+	dev-libs/libfguid
+	dev-libs/libfvalue
+	dev-libs/libhmac
 	dev-libs/libuna
 	app-forensics/libbfio
 	app-forensics/libodraw
@@ -35,14 +47,10 @@ RDEPEND="${DEPEND}"
 
 DOCS=( AUTHORS ChangeLog NEWS README )
 
-PATCHES=( "${FILESDIR}"/${P}-libbfio_include.patch )
+#PATCHES=( "${FILESDIR}"/${P}-libbfio_include.patch )
 
 src_configure() {
 	local libyal_econf=(
-		$(use_enable ewf v1-api)
-		$(use_with zlib)
-		$(use_with ssl openssl)
-		$(use_with uuid libuuid)
 	)
 	libyal-r1_src_configure
 }

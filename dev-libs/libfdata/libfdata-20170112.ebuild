@@ -16,9 +16,8 @@ KEYWORDS="~amd64 ~x86"
 IUSE="debug iconv nls static-libs threads"
 
 DEPEND="${LIBYAL_DEPEND}
-	dev-libs/libcstring
 	dev-libs/libcerror
-	dev-libs/libcthreads
+	threads? ( dev-libs/libcthreads )
 	dev-libs/libcdata
 	dev-libs/libcnotify
 	dev-libs/libfcache"

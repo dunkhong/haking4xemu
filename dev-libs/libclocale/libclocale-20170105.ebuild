@@ -16,6 +16,5 @@ KEYWORDS="~amd64 ~x86"
 IUSE="iconv nls static-libs unicode"
 
 DEPEND="${LIBYAL_DEPEND}
-	dev-libs/libcstring
 	dev-libs/libcerror"
 RDEPEND="${DEPEND}"
