@@ -25,3 +25,9 @@ DEPEND="${LIBYAL_DEPEND}
 	dev-libs/libfwnt
 	dev-libs/libuna"
 RDEPEND="${DEPEND}"
+
+src_prepare() {
+	epatch ${FILESDIR}/${P}.patch
+
+	libyal-r1_src_prepare
+}

@@ -1,0 +1,13 @@
+--- libfvalue/libfvalue_integer.c.orig	2018-11-27 16:55:33.925452310 +0900
++++ libfvalue/libfvalue_integer.c	2018-11-27 16:57:54.059458381 +0900
+@@ -1523,7 +1523,9 @@
+ 			value_64bit *= 10;
+ 
+ 			if( ( character_value < (uint8_t) '0' )
+-			 || ( character_value > (uint8_t) '9' ) )
++			 || ( ( character_value > (uint8_t) '9' )
++			 && character_value != (uint8_t) 'x')
++			 && ( character_value < (uint8_t) 'a' || character_value > (uint8_t) 'f' ) )
+ 			{
+ 				libcerror_error_set(
+ 				 error,

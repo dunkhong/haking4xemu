@@ -16,16 +16,25 @@ inherit libyal-r1
 LICENSE="LGPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="debug nls unicode python"
+IUSE="${LIBYAL_IUSE} fuse threads python static debug"
 
-DEPEND="
-	nls? (
-		virtual/libintl
-		virtual/libiconv
-	)
-	sys-fs/fuse
-	dev-libs/libxml2
-	dev-libs/libuna
-	app-forensics/libbfio
-	dev-libs/openssl"
+DEPEND="${LIBYAL_DEPEND}
+    dev-libs/libuna
+    app-forensics/libbfio
+    dev-libs/libcaes
+    dev-libs/libcdata
+    dev-libs/libcerror
+    dev-libs/libcfile
+    dev-libs/libclocale
+    dev-libs/libcnotify
+    dev-libs/libcpath
+    dev-libs/libcsplit
+    threads? ( dev-libs/libcthreads )
+    fuse? ( sys-fs/fuse )
+    dev-libs/libfcache
+    dev-libs/libfdata
+    dev-libs/libfdatetime
+    dev-libs/libfguid
+    dev-libs/libfvalue
+    dev-libs/libhmac"
 RDEPEND="${DEPEND}"
