@@ -1,0 +1,33 @@
+--- libfplist/libfplist_property.c.orig	2018-11-28 19:32:55.359604275 +0900
++++ libfplist/libfplist_property.c	2018-11-28 19:35:20.277610553 +0900
+@@ -592,14 +592,23 @@
+ 	     LIBFVALUE_INTEGER_FORMAT_TYPE_DECIMAL | LIBFVALUE_INTEGER_FORMAT_FLAG_UNSIGNED,
+ 	     error ) != 1 )
+ 	{
+-		libcerror_error_set(
+-		 error,
+-		 LIBCERROR_ERROR_DOMAIN_RUNTIME,
+-		 LIBCERROR_RUNTIME_ERROR_COPY_FAILED,
+-		 "%s: unable to convert value to integer.",
+-		 function );
++	     if( libfvalue_utf8_string_copy_to_integer(
++                     internal_property->value_tag->value,
++                     internal_property->value_tag->value_size - 1,
++                     (uint64_t *) value_64bit,
++                     64,
++                     LIBFVALUE_INTEGER_FORMAT_TYPE_HEXADECIMAL | LIBFVALUE_INTEGER_FORMAT_FLAG_UNSIGNED,
++                     error ) != 1 )
++             {
++                        libcerror_error_set(
++                         error,
++                         LIBCERROR_ERROR_DOMAIN_RUNTIME,
++                         LIBCERROR_RUNTIME_ERROR_COPY_FAILED,
++                         "%s: unable to convert value to integer.",
++                         function );
+ 
+-		return( -1 );
++                        return( -1 );
++              }
+ 	}
+ 	return( 1 );
+ }
