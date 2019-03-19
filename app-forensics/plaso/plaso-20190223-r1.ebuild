@@ -19,7 +19,7 @@ IUSE=""
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 DEPEND="${PYTHON_DEPS}
-    >=dev-python/binplist-1.0.3
+    >=dev-python/binplist-0.1.3
     dev-python/bencode
     >=app-forensics/dfvfs-20181209
     >=app-forensics/dfdatetime-20180704
