@@ -16,7 +16,7 @@ LICENSE="Apache-2"
 SLOT="0"
 KEYWORDS="~amd64 ~hppa ~ppc ~x86"
 IUSE=""
-REQUIRED_USE="${PYTHON_REQUIRED_USE}"
+REQUIRED_USE="${REQUIRED_USE}"
 
 DEPEND="${PYTHON_DEPS}
     >=dev-python/binplist-0.1.3
