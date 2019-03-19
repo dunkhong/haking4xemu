@@ -17,6 +17,5 @@ IUSE="iconv nls static static-libs unicode"
 DEPEND="${LIBYAL_DEPEND}
 		dev-libs/libcdatetime
 		dev-libs/libcerror
-		dev-libs/libcfile
 		dev-libs/libclocale
 		dev-libs/libcnotify"
