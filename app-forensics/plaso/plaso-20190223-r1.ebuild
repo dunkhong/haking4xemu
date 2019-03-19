@@ -68,9 +68,9 @@ DEPEND="${PYTHON_DEPS}
 	>=dev-python/idna-2.5
 	app-forensics/libfsapfs[python]
 	app-forensics/libfvde[python]
-	app-forensics/libfwnt[python]
+	dev-libs/libfwnt[python]
 	app-forensics/libsigscan[python]
-	app-forensics/libvslvm[python]
+	dev-libs/libvslvm[python]
 	>=dev-python/lz4-0.10.0
 	>=dev-python/pycrypto-2.6
 	>=dev-python/pyzmq-2.1.11
