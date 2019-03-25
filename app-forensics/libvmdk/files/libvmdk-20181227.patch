@@ -1,0 +1,17 @@
+--- configure.orig	2018-04-24 14:47:44.543901532 +0900
++++ configure	2018-04-24 14:49:07.643896645 +0900
+@@ -25438,10 +25438,11 @@
+ 
+   for ac_header in errno.h
+ do :
+-  ac_fn_c_check_header_mongrel "$LINENO" "errno.h" "ac_cv_header_errno_h" "$ac_includes_default"
+-if test "x$ac_cv_header_errno_h" = xyes; then :
++  as_ac_Header=`$as_echo "ac_cv_header_$ac_header" | $as_tr_sh`
++ac_fn_c_check_header_mongrel "$LINENO" "$ac_header" "$as_ac_Header" "$ac_includes_default"
++if eval test \"x\$"$as_ac_Header"\" = x"yes"; then :
+   cat >>confdefs.h <<_ACEOF
+-#define HAVE_ERRNO_H 1
++#define `$as_echo "HAVE_$ac_header" | $as_tr_cpp` 1
+ _ACEOF
+ 
+ fi
