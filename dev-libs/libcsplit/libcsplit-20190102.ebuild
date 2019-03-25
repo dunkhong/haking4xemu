@@ -6,7 +6,7 @@ EAPI=5
 
 DESCRIPTION="Library for cross-platform C split string functions"
 HOMEPAGE="https://github.com/libyal/libcsplit"
-LIBYAL_RELEASE="alpha"
+LIBYAL_RELEASE="beta"
 
 inherit libyal-r1
 
