@@ -1,6 +1,46 @@
---- configure.orig	2018-04-23 11:43:49.286802700 +0900
-+++ configure	2018-04-23 11:45:41.563805212 +0900
-@@ -35210,9 +35210,6 @@
+--- configure.orig	2019-03-26 11:12:05.779079025 +0900
++++ configure	2019-03-26 11:17:19.948070933 +0900
+@@ -25638,9 +25638,6 @@
+ int
+ main ()
+ {
+-#if !defined( LIBCLOCALE_HAVE_WIDE_CHARACTER_TYPE ) || ( LIBCLOCALE_HAVE_WIDE_CHARACTER_TYPE != 1 )
+-#error LIBCLOCALE_HAVE_WIDE_CHARACTER_TYPE not defined
+-##endif
+   ;
+   return 0;
+ }
+@@ -27000,9 +26997,6 @@
+ int
+ main ()
+ {
+-#if !defined( LIBCSPLIT_HAVE_WIDE_CHARACTER_TYPE ) || ( LIBCSPLIT_HAVE_WIDE_CHARACTER_TYPE != 1 )
+-#error LIBCSPLIT_HAVE_WIDE_CHARACTER_TYPE not defined
+-##endif
+   ;
+   return 0;
+ }
+@@ -32688,9 +32682,6 @@
+ int
+ main ()
+ {
+-#if !defined( LIBCFILE_HAVE_WIDE_CHARACTER_TYPE ) || ( LIBCFILE_HAVE_WIDE_CHARACTER_TYPE != 1 )
+-#error LIBCFILE_HAVE_WIDE_CHARACTER_TYPE not defined
+-##endif
+   ;
+   return 0;
+ }
+@@ -34167,9 +34158,6 @@
+ int
+ main ()
+ {
+-#if !defined( LIBCPATH_HAVE_WIDE_CHARACTER_TYPE ) || ( LIBCPATH_HAVE_WIDE_CHARACTER_TYPE != 1 )
+-#error LIBCPATH_HAVE_WIDE_CHARACTER_TYPE not defined
+-##endif
+   ;
+   return 0;
+ }
+@@ -35210,9 +35198,6 @@
  int
  main ()
  {

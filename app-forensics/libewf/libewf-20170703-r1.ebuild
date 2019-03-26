@@ -38,7 +38,6 @@ DOCS=( AUTHORS ChangeLog NEWS README )
 
 src_configure() {
 	local libyal_econf=(
-		$(use_enable ewf v1-api)
 		$(use_with zlib)
 		$(use_with ssl openssl)
 		$(use_with uuid libuuid)
