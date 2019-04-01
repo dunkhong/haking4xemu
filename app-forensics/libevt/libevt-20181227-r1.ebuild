@@ -16,10 +16,5 @@ SLOT="0"
 KEYWORDS="~x86 ~amd64"
 IUSE="${LIBYAL_IUSE}"
 
-DEPEND="${LIBYAL_DEPEND}
-	dev-libs/libuna
-	app-forensics/libbfio
-	app-forensics/libexe
-	app-forensics/libregf
-	app-forensics/libwrc"
+DEPEND="${LIBYAL_DEPEND}"
 RDEPEND="${DEPEND}"
