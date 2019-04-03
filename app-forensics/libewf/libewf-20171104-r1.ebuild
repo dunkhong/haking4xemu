@@ -41,6 +41,7 @@ PATCHES=(
 
 src_configure() {
 	local libyal_econf=(
+		--with-libcpath="no"
 		$(use_with zlib)
 		$(use_with ssl openssl)
 		$(use_with uuid libuuid)
