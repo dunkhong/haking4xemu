@@ -1,12 +1,18 @@
---- rip.pl
-+++ rip.pl
-@@ -60,7 +60,8 @@ $str =~ s/($path[scalar(@path) - 1])//;
- #push(@INC,$str);
- 
+--- rip.pl.orig	2019-05-24 15:59:13.093693768 +0900
++++ rip.pl	2019-05-24 16:01:30.137694468 +0900
+@@ -64,7 +64,7 @@
+ ($^O eq "MSWin32") ? ($plugindir = $str."plugins/")
+                    : ($plugindir = File::Spec->catfile("plugins"));
  #my $plugindir = $str."plugins/";
--my $plugindir = File::Spec->catfile("plugins");
-+#my $plugindir = File::Spec->catfile("plugins");
-+my $plugindir = "/usr/share/regripper/plugins";
+-#my $plugindir = File::Spec->catfile("plugins");
++my $plugindir = File::Spec->catfile("/usr/share/regripper/plugins");
  #print "Plugins Dir = ".$plugindir."\n";
  # End code update
- my $VERSION = "2\.8_20130801";
+ my $VERSION = "2\.8_20190318";
+@@ -401,4 +401,4 @@
+ 	};
+ 	$t = 0 if ($t < 0);
+ 	return $t;
+-}
+\ No newline at end of file
++}
